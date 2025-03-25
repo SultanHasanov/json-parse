@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+textarea {
+    width: 96%;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: monospace;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    text-align: left;
+    overflow: auto; /* Добавляем скролл */
+    font-family: monospace;
+    height: 200px; /* Ограничиваем высоту половиной экрана */
+    max-height: 50vh;
+    white-space: pre-wrap; /* Перенос строк */
+    word-wrap: break-word;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(40, 167, 69, 0.9); /* Зелёный фон */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
